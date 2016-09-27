@@ -1,43 +1,44 @@
 <div class="container">
-    <nav class="navbar navbar-light">
-        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2"
-            aria-expanded="false" aria-label="Toggle navigation">&#9776;
-        </button>
-        <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-            <a routerLink="/" routerLinkActive="active" class="navbar-brand">LabOrTool</a>
-            <ul class="nav navbar-nav pull-xs-right">
-                <li class="nav-item">
-                    <a routerLink="/activity" routerLinkActive="active" class="nav-link">Activity<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a routerLink="/production" routerLinkActive="active" class="nav-link">Production</a>
-                </li>
-                <li class="nav-item">
-                    <a routerLink="/project" routerLinkActive="active" class="nav-link">Project</a>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <a class="nav-link" id="dropdownMenuButton dropdown-toggle" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Inventory</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" routerLink="/inventory/component" routerLinkActive="active">Component</a>
-                            <a class="dropdown-item" routerLink="/inventory/manufacturer" routerLinkActive="active">Manufactuer</a>
-                            <a class="dropdown-item" routerLink="/inventory/distributor" routerLinkActive="active">Distributor</a>
-                            <a class="dropdown-item" routerLink="/inventory/location" routerLinkActive="active">Location</a>
-                            <a class="dropdown-item" routerLink="/inventory/footprint" routerLinkActive="active">Footprint</a>
-                            <a class="dropdown-item" routerLink="/inventory/category" routerLinkActive="active">Category</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a routerLink="/about" routerLinkActive="active" class="nav-link">About</a>
-                </li>
-            </ul>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button"
+                        class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" [routerLink]="['home']">LabOrTool</a>
+            </div>
+            <div class="collapse navbar-collapse pull-right"
+                 id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Activity</a></li>
+                    <li><a href="#">Production</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inventory <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Component</a></li>
+                            <li><a [routerLink]="['manufacturer']">Manufacturer</a></li>
+                            <li><a href="#">Distributor</a></li>
+                            <li><a href="#">Location</a></li>
+                            <li><a href="#">Footprint</a></li>
+                            <li><a href="#">Category</a></li>
+                            <li><a href="#">CPT</a></li>
+                            <li><a href="#">Unit</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-
-    <div class="margin-top">
+    <div class="container-fluid">
         <router-outlet></router-outlet>
     </div>
-
 </div>

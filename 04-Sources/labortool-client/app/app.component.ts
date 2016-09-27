@@ -1,16 +1,12 @@
+/**
+ * Created by dani on 24/09/16.
+ */
 import { Component } from '@angular/core';
-import { ROUTER_DIRECTIVES }  from '@angular/router';
-
-import { DataService } from './data/data.service';
 
 @Component({
-  selector: 'my-app',
-  templateUrl: './app/app.component.html',
-  styleUrls: ['./app/app.component.css'],
-  directives: [ROUTER_DIRECTIVES],
-  providers: [DataService]
+    selector:    'my-app',
+    templateUrl: './app/app.component.html',
+    styleUrls:   ['./app/app.component.css'],
 })
-
-export class AppComponent { 
-    private prova:string = "My First Angular 2 App";
+export class AppComponent {
 }

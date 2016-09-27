@@ -1,12 +1,9 @@
-.container {
-    margin-top: 30px;
+.nav>li>a, .nav>li>a {
+    border-bottom-width: 2px;
+    border-bottom-color: #fff;
+    border-bottom-style: solid;
 }
 
-.navbar-brand {
-    color: #428bca;
-}
-
-
-.margin-top {
-    margin-top: 20px;
+.nav>li>a:focus, .nav>li>a:hover {
+    border-bottom-color: #336699;
 }
