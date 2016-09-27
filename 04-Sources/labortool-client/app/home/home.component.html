@@ -1,0 +1,22 @@
+<div id="homeComponent" class="center-block">
+    <form [formGroup]="loginForm"
+          (ngSubmit)="onSubmit(loginForm.value)">
+        <div class="form-group">
+            <label for="exampleInputName2">User</label>
+            <input type="text" 
+                   class="form-control" 
+                   id="exampleInputName2" 
+                   placeholder="User"
+                   [formControl]="loginForm.controls['User']">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password"
+                   class="form-control"
+                   id="exampleInputPassword1"
+                   placeholder="Password"
+                   [formControl]="loginForm.controls['Password']">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>

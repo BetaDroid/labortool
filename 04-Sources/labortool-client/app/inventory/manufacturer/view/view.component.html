@@ -1,0 +1,41 @@
+<div id="viewManufacturerComponent" class="center-block">
+    <form [formGroup]="viewManufacturerForm">
+        <div class="form-group">
+            <label for="exampleInputName0">Id</label>
+            <input type="text"
+                   class="form-control"
+                   id="exampleInputName0"
+                   placeholder="Id"
+                   [formControl]="viewManufacturerForm.controls['ManufacturerId']">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputName1">Name</label>
+            <input type="text"
+                   class="form-control"
+                   id="exampleInputName1"
+                   placeholder="Name"
+                   [formControl]="viewManufacturerForm.controls['ManufacturerName']">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputName2">WebSite</label>
+            <input type="text"
+                   class="form-control"
+                   id="exampleInputName2"
+                   placeholder="WebSite"
+                   [formControl]="viewManufacturerForm.controls['ManufacturerWebSite']">
+        </div>
+        <button type="button"
+                class="btn btn-primary pull-left"
+                (click)="goToManufacturer()">Back
+        </button>
+        <button type="submit"
+                class="btn btn-default pull-right"
+                (click)="goToEdit(viewManufacturerForm.value.ManufacturerId)">Edit
+        </button>
+        <button type="submit"
+                class="btn btn-default pull-right"
+                (click)="deleteManufacturer(viewManufacturerForm.value.ManufacturerId)">Delete
+        </button>
+
+    </form>
+</div>
