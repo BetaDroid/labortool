@@ -15,6 +15,7 @@ import { ManufacturerClass } from '../class/manufacturer.class';
 @Component({
     selector   : 'view-manufacturer',
     templateUrl: './app/inventory/manufacturer/view/view.component.html',
+    styleUrls  : ['./app/inventory/manufacturer/view/view.component.css']
 })
 export class ViewManufacturerComponent implements OnInit {
     private viewManufacturerForm: FormGroup;

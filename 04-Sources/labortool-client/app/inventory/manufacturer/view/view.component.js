@@ -67,6 +67,7 @@ var ViewManufacturerComponent = (function () {
         core_1.Component({
             selector: 'view-manufacturer',
             templateUrl: './app/inventory/manufacturer/view/view.component.html',
+            styleUrls: ['./app/inventory/manufacturer/view/view.component.css']
         }), 
         __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, forms_1.FormBuilder, manufacturer_service_1.ManufacturerCallServices])
     ], ViewManufacturerComponent);
