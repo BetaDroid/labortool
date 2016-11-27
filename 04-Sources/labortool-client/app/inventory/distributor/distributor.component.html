@@ -1,0 +1,21 @@
+<div id="manufacturerComponent" class="center-block">
+    <br>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead class="thead-inverse">
+            <tr>
+                <th>Name</th>
+                <th>WebSite</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let m of ServerManufacturers">
+                <td (click)="goToView(m.ManufacturerId)">{{m?.ManufacturerName}}</td>
+                <td><a href="{{m?.ManufacturerWebSite}}">Link</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary pull-right" (click)="goToAdd()">Add +</button>
+</div>
