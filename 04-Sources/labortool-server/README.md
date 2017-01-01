@@ -1,6 +1,6 @@
 # LabOrTool Server
 
-### How to stup the api:
+### How to setup the api:
 
 1. Pull the repository and using your system shell, change the path to the pulled files
 2. Now move to the directory named: `config` and edit the `db_config.conf`file, with your database parameters
