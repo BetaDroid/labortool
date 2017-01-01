@@ -16,7 +16,7 @@ from .priority import Priority
 from .production import Production
 from .project import Project
 from .status import Status
-from type import Type
+from .type import Type
 from .unit import Unit
 from .user import User
 from .user_role import UserRole
